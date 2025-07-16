@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-widt  h, initial-scale=1.0" />
+  <title>Badal Raj - Web Developer Portfolio</title>                                                                                                            
+  <meta name="description" content="Badal Raj - Passionate Web Developer, Designer, and Learner. View my projects and get in touch!">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+</head>
+<body>
+  <nav style="position: sticky; top: 0; background-color: #333; color: rgb(251, 253, 251); padding: 10px; text-align: center; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <a href="#about" style="margin: 0 15px; color: rgb(246, 240, 240); text-decoration: none;">About</a>
+    <a href="#projects" style="margin: 0 15px; color: rgb(253, 248, 248); text-decoration: none;">Projects</a>
+    <a href="#skills" style="margin: 0 15px; color: rgb(253, 248, 248); text-decoration: none;">Skills</a>
+    <a href="#contact" style="margin: 0 15px; color: rgb(250, 247, 247); text-decoration: none;">Contact</a>
+    <button onclick="toggleDarkMode()" style="margin-left: 20px; padding: 5px 10px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">🌙</button>
+  </nav>
+  <header>
+    <h1>Hello, I'm <span id="typing-effect"></span></h1>
+    <p>Web Developer | Designer | Learner</p>
+  </header>
+
+  <section id="about" style="display: flex; align-items: center; gap: 32px; margin: 50px 0; padding: 0 20px;">
+    <img src="images/Br.jpg" alt="Badal Raj Profile Photo" style="width:150px;height:150px;border-radius:50%;box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    <div>
+      <h2>About Me</h2>
+      <p>I am a passionate web developer with a keen eye for design and a love for creating engaging digital experiences. My journey in web development started with curiosity and has evolved into a professional pursuit of excellence.</p>
+      <p>With a strong belief in continuous learning, I actively seek out opportunities to expand my knowledge in modern web technologies, ensuring I stay at the forefront of industry trends and best practices..</p>
+      <div style="margin-top: 20px;">
+        <span style="background: #e73c7e; color: white; padding: 5px 10px; border-radius: 15px; margin-right: 10px; font-size: 0.9em;">Frontend</span>
+        <span style="background: #23a6d5; color: white; padding: 5px 10px; border-radius: 15px; margin-right: 10px; font-size: 0.9em;">Responsive Design</span>
+        <span style="background: #23d5ab; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.9em;">UI/UX</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>🌐 Personal Portfolio Website</h3>
+        <p>A modern, fully responsive personal portfolio featuring animated backgrounds, dark mode toggle, typing effects, and interactive contact form. Built with clean code and modern web standards.</p>
+        <div style="margin-top: 15px;">
+          <span style="background: #ff6b6b; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">HTML5</span>
+          <span style="background: #4ecdc4; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">CSS3</span>
+          <span style="background: #45b7d1; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">JavaScript</span>
+          <span style="background: #9b59b6; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em;">Responsive</span>
+        </div>
+        <div style="margin-top: 15px; display: flex; gap: 10px;">
+          <a href="#" onclick="alert('You are currently viewing this portfolio!')" style="background: #2ecc71; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">🔗 Live Demo</a>
+          <a href="https://github.com/rajbadal" target="_blank" style="background: #34495e; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">📂 GitHub</a>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.85em; color: #666;">
+          ✨ Features: Dark Mode, Animations, Contact Form, Mobile-First Design
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>🌤️ Weather Forecast App</h3>
+        <p>A dynamic weather application providing real-time weather data, 5-day forecasts, and location-based services. Features beautiful weather animations, temperature conversion, and responsive design for all devices.</p>
+        <div style="margin-top: 15px;">
+          <span style="background: #96ceb4; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">OpenWeather API</span>
+          <span style="background: #feca57; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">JavaScript</span>
+          <span style="background: #ff9ff3; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">CSS3</span>
+          <span style="background: #74b9ff; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em;">Geolocation</span>
+        </div>
+        <div style="margin-top: 15px; display: flex; gap: 10px;">
+          <a href="#" onclick="alert('Weather App demo coming soon!')" style="background: #3498db; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">🌦️ Live Demo</a>
+          <a href="https://github.com/rajbadal/weather-app" target="_blank" style="background: #34495e; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">📂 GitHub</a>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.85em; color: #666;">
+          ✨ Features: Real-time Data, 5-Day Forecast, Location Search, Weather Icons
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>📱 Responsive Dashboard</h3>
+        <p>Modern admin dashboard with interactive charts, data visualization, and mobile-first responsive design approach.</p>
+        <div style="margin-top: 15px;">
+          <span style="background: #a8e6cf; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">React</span>
+          <span style="background: #dda0dd; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">Charts</span>
+          <span style="background: #98d8c8; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.8em;">Responsive</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>💻 Technical Skills</h2>
+    <p style="text-align: center; margin-bottom: 40px; color: #666;">Technologies I work with to bring ideas to life</p>
+    
+    <div class="skills-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto;">
+      
+      <div class="skill-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; color: white; text-align: center; transform: translateY(0); transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 15px 35px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(102, 126, 234, 0.3)'">
+        <div style="font-size: 3em; margin-bottom: 15px;">🌐</div>
+        <h3 style="margin-bottom: 15px; color: white;">Frontend Development</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px;">
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">HTML5</span>
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">CSS3</span>
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">JavaScript</span>
+        </div>
+        <div class="skill-progress" style="background: rgba(255,255,255,0.2); height: 8px; border-radius: 10px; overflow: hidden;">
+          <div style="background: white; height: 100%; width: 90%; border-radius: 10px; animation: slideIn 2s ease-out;"></div>
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.9;">Expert Level - 90%</p>
+      </div>
+      
+      <div class="skill-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 25px; border-radius: 15px; color: white; text-align: center; transform: translateY(0); transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(240, 147, 251, 0.3);" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 15px 35px rgba(240, 147, 251, 0.4)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(240, 147, 251, 0.3)'">
+        <div style="font-size: 3em; margin-bottom: 15px;">🎨</div>
+        <h3 style="margin-bottom: 15px; color: white;">UI/UX Design</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px;">
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">Responsive</span>
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">Animations</span>
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">Modern UI</span>
+        </div>
+        <div class="skill-progress" style="background: rgba(255,255,255,0.2); height: 8px; border-radius: 10px; overflow: hidden;">
+          <div style="background: white; height: 100%; width: 85%; border-radius: 10px; animation: slideIn 2s ease-out 0.2s both;"></div>
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.9;">Advanced Level - 85%</p>
+      </div>
+      
+      <div class="skill-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 25px; border-radius: 15px; color: white; text-align: center; transform: translateY(0); transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 15px 35px rgba(79, 172, 254, 0.4)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(79, 172, 254, 0.3)'">
+        <div style="font-size: 3em; margin-bottom: 15px;">⚡</div>
+        <h3 style="margin-bottom: 15px; color: white;">Interactive Features</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 20px;">
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">APIs</span>
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">DOM</span>
+          <span style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.85em;">Events</span>
+        </div>
+        <div class="skill-progress" style="background: rgba(255,255,255,0.2); height: 8px; border-radius: 10px; overflow: hidden;">
+          <div style="background: white; height: 100%; width: 80%; border-radius: 10px; animation: slideIn 2s ease-out 0.4s both;"></div>
+        </div>
+        <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.9;">Proficient Level - 80%</p>
+      </div>
+      
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+      <h3 style="margin-bottom: 20px; color: #2c3e50;">🛠️ Tools & Technologies</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; max-width: 600px; margin: 0 auto;">
+        <span style="background: #e74c3c; color: white; padding: 8px 16px; border-radius: 25px; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">🔥 Git</span>
+        <span style="background: #3498db; color: white; padding: 8px 16px; border-radius: 25px; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">💻 VS Code</span>
+        <span style="background: #9b59b6; color: white; padding: 8px 16px; border-radius: 25px; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">📱 Responsive</span>
+        <span style="background: #1abc9c; color: white; padding: 8px 16px; border-radius: 25px; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">🌐 Web APIs</span>
+        <span style="background: #f39c12; color: white; padding: 8px 16px; border-radius: 25px; font-size: 0.9em; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">⚡ Performance</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>💬 What Clients Say</h2>
+    <p style="text-align: center; margin-bottom: 40px; color: #666;">Real feedback from amazing people I've worked with</p>
+    
+    <div class="testimonials-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+      
+      <div class="testimonial-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 20px; color: white; position: relative; transform: translateY(0); transition: all 0.4s ease; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);" onmouseover="this.style.transform='translateY(-15px) rotateY(5deg)'; this.style.boxShadow='0 20px 40px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0) rotateY(0deg)'; this.style.boxShadow='0 10px 30px rgba(102, 126, 234, 0.3)'">
+        <div style="position: absolute; top: -15px; left: 30px; background: white; color: #667eea; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">💼</div>
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+          <div style="color: #ffd700; font-size: 1.2em; margin-bottom: 15px;">★★★★★</div>
+          <p style="font-size: 1.1em; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Badal is an exceptional developer who delivers high-quality work on time. His attention to detail and problem-solving skills are outstanding. I highly recommend him for any web development project."</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em;">👨‍💼</div>
+          <div>
+            <h4 style="margin: 0; color: white; font-size: 1.1em;">Alex Johnson</h4>
+            <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.9em;">CEO, TechStart Inc.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 30px; border-radius: 20px; color: white; position: relative; transform: translateY(0); transition: all 0.4s ease; box-shadow: 0 10px 30px rgba(240, 147, 251, 0.3);" onmouseover="this.style.transform='translateY(-15px) rotateY(-5deg)'; this.style.boxShadow='0 20px 40px rgba(240, 147, 251, 0.4)'" onmouseout="this.style.transform='translateY(0) rotateY(0deg)'; this.style.boxShadow='0 10px 30px rgba(240, 147, 251, 0.3)'">
+        <div style="position: absolute; top: -15px; left: 30px; background: white; color: #f093fb; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">🎨</div>
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+          <div style="color: #ffd700; font-size: 1.2em; margin-bottom: 15px;">★★★★★</div>
+          <p style="font-size: 1.1em; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Working with Badal was a fantastic experience! His creative approach to UI/UX design and technical expertise made our project a huge success. Professional, reliable, and talented."</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em;">👩‍🎨</div>
+          <div>
+            <h4 style="margin: 0; color: white; font-size: 1.1em;">Sarah Martinez</h4>
+            <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.9em;">Creative Director, Design Studio</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 30px; border-radius: 20px; color: white; position: relative; transform: translateY(0); transition: all 0.4s ease; box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);" onmouseover="this.style.transform='translateY(-15px) rotateY(5deg)'; this.style.boxShadow='0 20px 40px rgba(79, 172, 254, 0.4)'" onmouseout="this.style.transform='translateY(0) rotateY(0deg)'; this.style.boxShadow='0 10px 30px rgba(79, 172, 254, 0.3)'">
+        <div style="position: absolute; top: -15px; left: 30px; background: white; color: #4facfe; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">⚡</div>
+        <div style="margin-top: 20px; margin-bottom: 20px;">
+          <div style="color: #ffd700; font-size: 1.2em; margin-bottom: 15px;">★★★★★</div>
+          <p style="font-size: 1.1em; line-height: 1.6; font-style: italic; margin-bottom: 20px;">"Badal's technical skills are impressive! He built our interactive web application with clean code and modern features. Great communication and delivered exactly what we needed."</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5em;">👨‍💻</div>
+          <div>
+            <h4 style="margin: 0; color: white; font-size: 1.1em;">Mike Chen</h4>
+            <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.9em;">Product Manager, WebFlow Co.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div style="text-align: center; margin-top: 50px;">
+      <div style="display: inline-flex; align-items: center; gap: 20px; background: linear-gradient(135deg, #667eea, #764ba2); padding: 20px 40px; border-radius: 50px; color: white; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);">
+        <div style="font-size: 2em;">🎆</div>
+        <div>
+          <h3 style="margin: 0; color: white;">100% Client Satisfaction</h3>
+          <p style="margin: 5px 0 0 0; opacity: 0.9;">Delivering quality work that exceeds expectations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p style="margin-bottom: 30px;">I'm always open to discussing new opportunities and interesting projects!</p>
+    
+    <div style="display: flex; gap: 40px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <h3>Contact Information</h3>
+        <p>📧 Email: badalrajsahnogia@gmail.com</p>
+        <p>📱 Let's connect on social media:</p>
+        <div style="margin-top:15px;">
+          <a href="https://github.com/rajbadal" target="_blank" style="display: inline-block; margin-right: 15px; padding: 10px; background: #333; border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">🐙</a>
+          <a href="https://www.linkedin.com/in/badal-raj-sahnogia-182789312" target="_blank" style="display: inline-block; margin-right: 15px; padding: 10px; background: #0077b5; border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">💼</a>
+          <a href="https://www.instagram.com/badalr4j?igsh=MWhkcDVkanZldzV5Ng==" target="_blank" style="display: inline-block; padding: 10px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">📷</a>
+        </div>
+      </div>
+      
+      <div style="flex: 1; min-width: 300px;">
+        <h3>Send a Message</h3>
+        <form id="contact-form" onsubmit="submitForm(event)" style="text-align: left;">
+          <input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+          <input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+          <textarea id="message" placeholder="Your Message" required rows="5" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; resize: vertical; box-sizing: border-box;"></textarea>
+          <button type="submit" style="background: linear-gradient(45deg, #e73c7e, #23a6d5); color: white; padding: 12px 30px; border: none; border-radius: 25px; cursor: pointer; font-weight: bold; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Send Message 🚀</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer style="background:#222; color:#fff; text-align:center; padding:20px 0; margin-top: 50px;">
+    <p>&copy; 2025 Badal Raj. Made with ❤️ and lots of ☕</p>
+    <p style="font-size: 0.9em; margin-top: 10px;">"Code is poetry written in logic" 💻</p>
+  </footer>
+
+  <button id="scrollToTop" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
